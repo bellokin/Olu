@@ -17,6 +17,10 @@
     <title>
        Olugbenro Bello 
     </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
 <!-- JavaScript Bundle with Popper -->
     <link rel="shortcut icon" type="image/x-icon" sizes="300x300" href="images/red.png" />
   
@@ -383,7 +387,9 @@ h3{
   
 }
 .motherdiv{
-  display: flex;
+ display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 .fa-star {
   color: yellow;
@@ -428,8 +434,9 @@ h3{
 /* CSS for larger screens */
 
 .motherdiv {
-  display: flex;
-  justify-content: center;
+ display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 .rating-box {
@@ -448,9 +455,11 @@ h3{
 @media screen and (max-width: 480px) {
 
   .motherdiv {
-    flex-direction: column;
-    align-items: center;
-  }
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+}
 
   .rating-box {
     max-width: 300px;
@@ -462,18 +471,22 @@ h3{
     width: 20px;
   }
 
-.container{
-  
-  white-space: nowrap;
-  overflow-x: auto;
+h2 {
+  margin-top: 20px;
+  text-align: center;
+}
+
 
 
 }
 
 
+.rattwo {
+ font-family: 'Dancing Script', cursive;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
 }
-
-
   
 
   </style>
@@ -937,16 +950,16 @@ Creation of  financial statements such as income statements, balance sheets, and
               </div>
               </div>
 
-<br>
-
-
-<br>
-<br>
-
-
+              <hr>
+              <br>
 <center>
-  <div class="container">
+<h2 class="rattwo">Ratings</h2>
+</center>
+<br>
+ 
+<div class="container">
 <div class="motherdiv">
+  
 <div class="rating-box" >
   <header>Melissa</header>
   <div class="stars">
@@ -1022,13 +1035,27 @@ Creation of  financial statements such as income statements, balance sheets, and
   
 </div>
 
+<div class="rating-box" >
+  <header class="card-text "> Isaac </header>
+  <div class="stars">
+    <img src="images/fullstar.png " style="height:30px; width:30px;">
+ 
+    <img src="images/fullstar.png " style="height:30px; width:30px;">
+ 
+    <img src="images/fullstar.png " style="height:30px; width:30px;">
+    <img src="images/fullstar.png " style="height:30px; width:30px;">
+    <img src="images/fullstar.png " style="height:30px; width:30px;">
+
+  </div>
+
+  <p class="card-text peter">"Recommended!!!"
+
+  </p>
+  
 </div>
 
 
-
-
 </div>
-</center>
 
 
 <footer class="bd-footer py-4 py-md-5 mt-5 bg-light" >

@@ -425,102 +425,52 @@ h3{
   color: #ff9c1a;
 }
 
-/* For small screens */
-@media only screen and (max-width: 600px) {
-  .rating-box {
-    text-align: center;
+/* CSS for larger screens */
+
+.motherdiv {
+  display: flex;
+  justify-content: center;
+}
+
+.rating-box {
+  background-color: #fff;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.stars img {
+  margin-right: 5px;
+}
+
+/* CSS for smaller screens */
+
+@media screen and (max-width: 480px) {
+
+  .motherdiv {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .rating-box img {
+
+  .rating-box {
+    max-width: 300px;
+    padding: 10px;
+  }
+
+  .stars img {
     height: 20px;
     width: 20px;
   }
+
+.container{
   
-  .rating-box p {
-    font-size: 14px;
-  }
+  white-space: nowrap;
+  overflow-x: auto;
+
+
 }
 
-/* For medium screens */
-@media only screen and (min-width: 601px) and (max-width: 900px) {
-  .rating-box img {
-    height: 25px;
-    width: 25px;
-  }
-  
-  .rating-box p {
-    font-size: 16px;
-  }
-}
 
-/* For large screens */
-@media only screen and (min-width: 901px) {
-  .rating-box img {
-    height: 30px;
-    width: 30px;
-  }
-  
-  .rating-box p {
-    font-size: 18px;
-  }
-}
-/* For small screens */
-@media only screen and (max-width: 600px) {
-  .rating-box {
-    text-align: center;
-
-   
-  }
-  
-  .rating-box img {
-    height: 19px;
-    width: 19px;
- 
-  }
-  
-  .rating-box p {
-    font-size: 14px;
-  }
-
-  .motherdiv{
-    display: flex;
-  flex-direction: column;
-  gap:50px
-
-  }
-}
-
-/* For medium screens */
-@media only screen and (min-width: 601px) and (max-width: 900px) {
-  .rating-box img {
-    height: 19px;
-    width: 19px;
- 
-  }
-  
-  .rating-box p {
-    font-size: 16px;
- 
-  }
-  
-  .motherdiv{
-    display: flex;
-  flex-direction: column;
-  gap:50px
-  
-  }
-}
-
-/* For large screens */
-@media only screen and (min-width: 901px) {
-  .rating-box img {
-    height: 30px;
-    width: 30px;
-  }
-  
-  .rating-box p {
-    font-size: 18px;
-  }
 }
 
 
@@ -995,6 +945,7 @@ Creation of  financial statements such as income statements, balance sheets, and
 
 
 <center>
+  <div class="container">
 <div class="motherdiv">
 <div class="rating-box" >
   <header>Melissa</header>
@@ -1052,6 +1003,26 @@ Creation of  financial statements such as income statements, balance sheets, and
   
 </div>
 
+<div class="rating-box" >
+  <header class="card-text "> Mark </header>
+  <div class="stars">
+    <img src="images/fullstar.png " style="height:30px; width:30px;">
+ 
+    <img src="images/fullstar.png " style="height:30px; width:30px;">
+ 
+    <img src="images/fullstar.png " style="height:30px; width:30px;">
+    <img src="images/fullstar.png " style="height:30px; width:30px;">
+    <img src="images/fullstar.png " style="height:30px; width:30px;">
+
+  </div>
+
+  <p class="card-text peter">"Awesome Just Awesome"
+
+  </p>
+  
+</div>
+
+</div>
 
 
 

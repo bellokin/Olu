@@ -291,7 +291,7 @@
 			background-color: #3e8e41;
 		}
 
-
+/* Default styles */
 .hline {
   border-style: none;
   border-color: grey;
@@ -303,11 +303,55 @@
 }
 
 
+/* Styles for screens smaller than 768px */
+@media screen and (max-width: 767px) {
+  .hline {
+    width: 20%;
+    margin: 0 auto;
+    margin-top: -250px;
+    margin-left:-30;
+  }
 
+  .carddiv{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 300px;
+  
+  
+  
+}
+.card
+{
+  width:300px;
+}
 
+}
 
 /* Styles for screens smaller than 480px */
+@media screen and (max-width: 479px) {
+  .hline {
+    width: 40%;
+    margin: 0 auto;
+    margin-top: -250px;
+  }
 
+  .carddiv{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 300px;
+ margin-right:700px;
+  
+  
+}
+.card
+{
+  width:300px;
+}
+
+
+}
 
 .carousel-control-color{
   background-color: #941e87 !important;
@@ -618,7 +662,7 @@ About ME
       </div>
     </div>
   </section>
-  <div class="carddiv row">
+  <div class="carddiv mx-auto">
     <div class=" col-md-6 col-lg-4 mb-3">
       <div class="card">
       
@@ -651,9 +695,8 @@ About ME
           <a href="#" class="card-link">Another link</a>
         </div>
       </div>
-    </div>
-  </div>
-  
+</div>
+
 <center>
   <hr class="hline">
 </center>
@@ -739,7 +782,7 @@ Get ready
       </div>
       <div class="section-details ">
 
-          <div class="carddiv row">
+          <div class="carddiv mx-auto">
               <div class=" col-md-6 col-lg-4 mb-3">
                     <div class="card">
                     
@@ -902,7 +945,7 @@ Creation of  financial statements such as income statements, balance sheets, and
     <img src="images/gmailicon.png" style="height:20px; width:20px; margin-right: 10px;" alt="Img not found">
     <img src="images/instagramlogo.png" style="height:20px; width:20px;" alt="Img not found">
   </div>
-
+ 
 
 
 
